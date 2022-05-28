@@ -1,0 +1,132 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial;
+  background: linear-gradient(180deg, #004364, #0a0e22);
+  height: 100vh;
+}
+
+header {
+  height: 100px;
+  background-color: rgb(255, 240, 0);
+  text-align: center;
+  padding-top: 40px;
+  box-shadow: 3px 3px 3px #ccc;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+.main {
+  text-align: center;
+  padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calcFrame {
+  background-color: rgba(194, 194, 194, 10%);
+  width: 320px;
+  height: 425px;
+  border: 2px solid rgba(90, 90, 90, 0.4);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #001722;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textBox {
+  width: 290px;
+  height: 90px;
+  font-family: inherit;
+  font-size: 2.2rem;
+  background-color: rgba(160, 250, 210, 0.7);
+  border: 2px solid rgba(45, 45, 45, 0.7);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 80%);
+  margin: 15px 10px 10px 10px;
+  text-align: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+button {
+  margin: 5px;
+  width: 65px;
+  height: 50px;
+  font-size: 1.2rem;
+  background-color: rgba(212, 212, 212, 0.7);
+  border: 1.5px solid rgba(70, 70, 70, 0.7);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(255, 244, 92);
+}
+
+button:focus {
+  background-color: rgba(255, 217, 0, 0.99);
+}
+
+#del {
+  background-color: rgb(240, 65, 40);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+#ac {
+  background-color: rgb(240, 65, 40);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+#del:hover {
+  background-color: rgb(255, 110, 90);
+}
+
+#ac:hover {
+  background-color: rgb(255, 110, 90);
+}
+
+#del:focus {
+  background-color: rgba(215, 35, 10, 99%);
+}
+
+#ac:focus {
+  background-color: rgba(215, 35, 10, 99%);
+}
+
+@media only screen and (max-width: 330px) {
+  .calcFrame {
+    width: 250px;
+    height: 355px;
+  }
+  .textBox {
+    width: 220px;
+    height: 65px;
+    font-size: 2rem;
+  }
+  button {
+    margin: 2px;
+    width: 50px;
+    height: 46px;
+  }
+}
